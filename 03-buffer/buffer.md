@@ -58,7 +58,9 @@ buf.toString([encoding, [, start[, end]]])
 * end - 结束位置，默认为缓冲区的末尾
 
 **返回值**
+
 解码缓冲区数据并使用指定的编码返回字符串。
+
 demo
 ```javascript
 let buf = new Buffer(26);
@@ -71,3 +73,30 @@ console.log(buf.toString('ascii', 0, 5));   // abcde
 console.log(buf.toString('utf8', 0, 5));    // abcde
 console.log(buf.toString(undefined, 0, 5)); // abcde
 ```
+
+## 将 Buffer 转换为 JSON 对象
+语法
+```javascript
+buf.toJSON()
+```
+
+## 缓冲区合并
+语法
+```javascript
+Buffer.concat(list[, totalLength])
+```
+参数：
+* list - 用于合并的 Buffer 对象数组列表
+* totalLength - 指定合并后 Buffer 对象的总长度
+
+**返回值**
+返回一个多个成员合并的新 Buffer 对象。
+
+## 缓冲区比较
+语法
+```javascript
+buf.compare(otherBuffer)
+```
+**返回值**
+
+
