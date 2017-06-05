@@ -99,4 +99,4 @@ buf.compare(otherBuffer)
 ```
 **返回值**
 
-
+## ...其他方法具体参加文档s
