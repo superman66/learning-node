@@ -1,7 +1,9 @@
 ## 什么是流
 Streams 是数据集合，就像数组或者 strings。区别在于 Streams 并不是立马得到全部的数据。所以 Streams 特别适合用于处理大的数据，或者处理 chunk 数据。
 Node 中的许多内置模块都继承了 Streams 接口。比如：
+
 ![](./streams.jpg)
+
 上面这张图列出了一些内置模块，当中包含了 `Readable Streams` 和 `Writable Streams`。有我们处理 web 常见的 `HTTP responses`、`HTTP request` 以及读写文件的模块等。
 
 ## Streams 四种类型
@@ -90,5 +92,5 @@ console.log('文件压缩完成');
 
 
 
-## 拓展
+## 拓展阅读
 * [Node.js Streams: Everything you need to know](https://medium.freecodecamp.com/node-js-streams-everything-you-need-to-know-c9141306be93)
